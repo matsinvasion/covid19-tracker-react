@@ -9,8 +9,14 @@ import { fetchData } from './api';
 
 
 
+
 class App extends Component {
-  state = {  }
+  state = { data:{} }
+  async componentDidMount(){
+    const requiredData = await fetchData();
+    this.setState({ data : requiredData })
+  }
+  
   render() { 
     return (
       <div className={styles.container}>
