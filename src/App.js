@@ -21,7 +21,7 @@ class App extends Component {
     const {data} = this.state;
     return (
       <div className={styles.container}>
-        <cards />
+        <Cards data={data}/>
         <CountryPicker />
         <Charts />
       </div>
