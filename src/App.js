@@ -18,6 +18,7 @@ class App extends Component {
   }
   
   render() { 
+    const {data} = this.state;
     return (
       <div className={styles.container}>
         <card />
