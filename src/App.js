@@ -5,6 +5,8 @@ import Cards from './componets/Cards/Card';
 import CountryPicker from './componets/CountryPicker/CountryPicker';
 import Charts from './componets/Chart/Chart';
 import styles from './App.module.css';
+import { fetchData } from './api';
+
 
 
 class App extends Component {
