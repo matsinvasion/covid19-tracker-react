@@ -3,14 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Cards from './componets/Cards/Card';
 import CountryPicker from './componets/CountryPicker/CountryPicker';
-import Charts from './componets/Chart/Chart'
+import Charts from './componets/Chart/Chart';
+import styles from './App.module.css';
 
 
 class App extends Component {
   state = {  }
   render() { 
     return (
-      <div className="App">
+      <div className={styles.container}>
         <card />
         <CountryPicker />
         <Charts />
