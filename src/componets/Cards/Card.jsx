@@ -3,9 +3,10 @@ import { Card, CardContent, Typography, Grid} from '@material-ui/core';
 import styles from './Cards.module.css';
 
 //use functional components
-const Cards = (props) => {
-    console.log(props)
-    return ( 
+const Cards = ({ data : {confirmed, recovered, deaths, lastUpdate }}) => {
+    if(!confirmed) return 'Loading ...'
+ 
+    return (
      <div className={styles.container}>
          <Grid container spacing={3} justify="center">
              <Grid item component={Card}>
