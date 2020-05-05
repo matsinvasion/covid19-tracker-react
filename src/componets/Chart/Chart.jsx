@@ -26,7 +26,7 @@ const lineChart = (
         fill:true}]}}/>) : null    
     );
     return ( 
-      <div className="styles.container">
+      <div className={styles.container}>
           {lineChart}
 
       </div>
